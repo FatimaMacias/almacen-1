@@ -10,7 +10,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Almacén</a>
+        <a class="navbar-brand" href="../../index.html">Almacén</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,29 +37,33 @@
 
         <form action="lista.html" method="POST">
 
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" class="form-control">
+            <div class="for-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" class="form-control">
+                </div>
             </div>
             
-            <div class="form-group">
-                <label for="categoria">Categoría</label>
-                <select class="form-control" name="categoria" >
-                    <option value="">Selecciona una categoría...</option>
-                    <option value="refrescos">Refrescos</option>
-                    <option value="carnes_frias">Carnes frías</option>
-                    <option value="herramientas">Herramientas</option>
-                </select>
-              </div>
-            
-            <div class="form-group">
-                <label for="precio">Precio:</label>
-                <input class="form-control" type="text" name="precio" value="10">
-            </div>
-
-            <div class="form-group">
-                <label for="precio">Stock:</label>
-                <input class="form-control" type="number" name="stock" placeholder="stock">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="categoria">Categoría</label>
+                    <select class="form-control" name="categoria" >
+                        <option value="">Selecciona una categoría...</option>
+                        <option value="refrescos">Refrescos</option>
+                        <option value="carnes_frias">Carnes frías</option>
+                        <option value="herramientas">Herramientas</option>
+                    </select>
+                  </div>
+                
+                <div class="form-group col-md-4">
+                    <label for="precio">Precio:</label>
+                    <input class="form-control" type="text" name="precio" value="10">
+                </div>
+    
+                <div class="form-group col-md-2">
+                    <label for="precio">Stock:</label>
+                    <input class="form-control" type="number" name="stock" placeholder="stock">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Guardar</button>
